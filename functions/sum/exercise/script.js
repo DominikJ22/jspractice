@@ -8,21 +8,53 @@
   ES6 Syntax (Arrow function): const add = () => {}
 */
 
-function add(){
-  //Add function here
+function add(a, b){
+  return a + b
+}
+console.log(add(2, 2))
+
+const addSec = (a, b) => {
+  return a + b
+}
+console.log(addSec(2, 2))
+
+
+
+
+function sub( a, b){
+   return a - b//Subtract function here
+}
+console.log(sub(4, 3))
+
+const subSec = (a, b) => {
+ return a - b
+}
+console.log(subSec(4, 3))
+
+
+
+function div(a, b){
+  return a / b//Divide function here
+}
+console.log(div(4, 2))
+
+const divSec = (a, b) =>{
+ return a /b
+}
+console.log(divSec(4, 2))
+
+
+
+function mul(a, b){
+  return a * b //Multiply function here
 }
 
-function sub(){
-  //Subtract function here
-}
+console.log(mul(8, 8))
 
-function div(){
-  //Divide function here
+const  mulSec = (a, b) =>{
+  return a * b
 }
-
-function mul(){
-  //Multiply function here
-}
+console.log(mulSec(8, 8))
 
 console.log('hello from the SUM exercise')
 /* 

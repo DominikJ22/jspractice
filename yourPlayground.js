@@ -363,27 +363,75 @@ function sayMyName() {
 // }
 
 
-// console.log(letterFrequency('haha'))
+// // console.log(letterFrequency('haha'))
 
-//wordFrequency('lol what lol') to {'lol': 2, 'what': 1}
-const wordFrequency = (phrase) =>{
-  let freqency = {}
- let words = phrase.split(' ')
- for (const word of words){
+// //wordFrequency('lol what lol') to {'lol': 2, 'what': 1}
+// const wordFrequency = (phrase) =>{
+//   let freqency = {}
+//  let words = phrase.split(' ')
+//  for (const word of words){
 
-  if(word in freqency){
-    frequency[word] += 1
-  } else {
-    frequency[word] = 1
-  }
- }
+//   if(word in freqency){
+//     frequency[word] += 1
+//   } else {
+//     frequency[word] = 1
+//   }
+//  }
 
-  return freqency
+//   return freqency
+// }
+
+// console.log(wordFrequency('lol what lol'))
+
+
+
+// //incremntal operators
+// //++ += -= --
+
+
+//higher order functions
+
+
+// map - loops and returns an array
+//filter = loops and return array with matching condtions
+//reduce - combine all of the sum
+
+
+//MAP
+const doubleMap = (numbers) => {
+  return numbers.map(numbers => numbers * 2)
+}
+console.log(doubleMap([1, 2, 3, 4]))
+
+
+//FILTER
+const filter = (numbers) =>{
+
+  return numbers.filter( numbers => numbers > 3)
+}
+console.log(filter([1, 2, 3, 4, 5]))
+
+
+const actors = [
+  {name: 'johnny', netWorth: 200000},
+  {name: 'amber', netWorth: 10},
+  {name: 'leo', netWorth: 100000}
+]
+
+let result = (actors.filter(actor => actor.netWorth > 10))
+let names = result.map(actor => actor.name).join(', ')
+
+playgorund.innerHtml = `<h1>${names}</h1>`
+
+//REDUCE
+//SUM think Reduce
+//takes in a function
+//loops and gives back accumulator
+function sum(a, b){
+  return a + b
 }
 
-console.log(wordFrequency('lol what lol'))
+const num = [1, 2, 3]
+const ans = nums.reduce(sum)
 
-
-
-//incremntal operators
-//++ += -= --
+console.log(ans)

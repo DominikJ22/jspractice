@@ -421,7 +421,7 @@ const actors = [
 let result = (actors.filter(actor => actor.netWorth > 10))
 let names = result.map(actor => actor.name).join(', ')
 
-playgorund.innerHtml = `<h1>${names}</h1>`
+//playgorund.innerHtml = `<h1>${names}</h1>`
 
 //REDUCE
 //SUM think Reduce
@@ -431,7 +431,13 @@ function sum(a, b){
   return a + b
 }
 
-const num = [1, 2, 3]
-const ans = nums.reduce(sum)
+function multiply(a, b){
+  return a * b
+}
+
+
+const nums = [1, 2, 3]
+//common sum practice pattern 
+const ans = nums.reduce((a, b) => a + b, 0)
 
 console.log(ans)

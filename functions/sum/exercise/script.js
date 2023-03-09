@@ -60,3 +60,14 @@ console.log('hello from the SUM exercise')
 /* 
   TODO: create a function that console logs the result of any of the above operations.
 */
+function mult(a, b){
+  return a * b
+}
+
+console.log(mult(2, 3))
+
+const addNum = (a, b) =>{
+  return a + b
+}
+
+console.log(addNum(3, 3))

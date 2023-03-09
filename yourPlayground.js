@@ -134,7 +134,7 @@ function sayMyName() {
   // console.log(groceries)
 
   //pop removes things from the end
-  // groceries.push()
+  // groceries.pop()
   // console.log(groceries)
 
   //unshift adds things to the front of an array

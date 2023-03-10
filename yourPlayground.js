@@ -147,7 +147,7 @@ function sayMyName() {
 
   //Array Slice
   // returns a part of the array you want in a new one
-  //starts from 0 indec and includes anthing until the end of the second peremater (RANGE)
+  //starts from 0 indec and includes anthing until the end of the second peremater (RANGE of actual items)
   // groceries.slice(0, 2)
   // console.log(groceries)
 

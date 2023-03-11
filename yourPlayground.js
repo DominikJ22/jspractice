@@ -209,7 +209,7 @@ function sayMyName() {
 //     netWorth: function() {
 //       return this.assets - this.liabilities
 //     }
-//   } 
+//   } '
   
 //   const intro = `Hi my name is ${person.name} and the color of my shirt is ${person.shirt} and my net worth is $${person.netWorth()}`
 
